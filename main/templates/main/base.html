@@ -1,0 +1,20 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Utile Labs{% endblock %}</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "{% static 'css/base.css' %}">
+        <link rel = "stylesheet" type = "text/css" href = "{% static 'css/nav.css' %}">
+        {% block css %}
+        {% endblock %}
+    </head>
+    <body>
+        {% include 'main/nav.html' %}
+
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
