@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+  body { margin:0; padding: 0 0 10rem 0;}
+  div { display: block; width: calc(100% - 2rem); color: white; padding: 1rem; font-size: 150%; text; text-shadow: 2px 2px 2px #000; }
+  </style>
+</head>
+<body>
+  <div style="background-color: #000;"></div>
+  <div style="background-color: #6b8e4e;"></div>
+  <div style="background-color: #829179;"></div>
+  <div style="background-color: #b9c8ba;"></div>
+  <div style="background-color: #9baaac;"></div>
+  <div style="background-color: #d4dbd8;"></div>
+
+
+  <script type="text/javascript">
+  var divs = document.getElementsByTagName('div');
+  for (var i=0; i<divs.length; i++){
+    divs[i].innerHTML = divs[i].getAttribute("style").replace('background-color: ','').replace(';','');
+  }
+  </script>
+</body>
+</html>
