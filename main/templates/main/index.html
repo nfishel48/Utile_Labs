@@ -1,10 +1,33 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
         <title>Utile Labs</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "{% static 'css/index.css' %}">
     </head>
     <body>
+        <div id = "nav">
+            <div id="nav-logo"></div>
+            <div id="nav-links">
+                <div class="nav-link">Work</div>
+                <div class="nav-link">Services</div>
+                <div class="nav-link">About</div>
+            </div>
+        </div>
+        <div id = "landing">
+            <div id = "landing-safe">
+                <div id = "landing-msg">
+                    <h1 id = "landing-msg-title">Websites Grow on Our Trees</h1>
+                    <p id = "landing-msg-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales neque eu purus euismod, nec tincidunt sapien posuere. Donec nec nibh sagittis, rutrum magna nec, ornare mi. Donec gravida sem interdum tortor euismod mattis. Nunc sed sollicitudin ligula. Aliquam condimentum sollicitudin tellus ac mattis. Mauris nibh arcu, tempus vitae augue vitae, iaculis eleifend purus. Suspendisse sed turpis turpis. Nam sit amet erat elit. Sed viverra tincidunt interdum. Donec orci dolor, aliquet sit amet magna in, elementum elementum nunc. Pellentesque lacus ligula, tincidunt sit amet placerat a, egestas vitae elit. Curabitur lobortis risus massa, id lacinia sapien ultrices vel.</p>
+                    <div id = "landing-works-btn">See Our Work</div>
+                </div>
+                <div id = "landing-img">
 
+                </div>
+            </div>
+        </div>
     </body>
 </html>

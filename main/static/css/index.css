@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
+
+:root{
+    --safe: 75%;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: 'Roboto';
+}
+
+#nav{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+#nav-logo{
+    width: 200px;
+}
+#nav-links{
+    display: flex;
+}
+.nav-link{
+    padding: 10px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#landing{
+    width: 100%;
+    height: 500px;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background: #6b8e4e;
+    -background: #3c5148;
+    color: white;
+}
+#landing-safe{
+    width: var(--safe);
+    display: flex;
+    align-items: space-between;
+}
+#landing-msg{
+    flex: 1;
+}
+#landing-msg-title{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+#landing-msg-body{
+    margin: 20px 0 25px 0;
+    padding: 0;
+}
+#landing-works-btn{
+    width: 50%;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    background: #6b8e4e;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 4px solid white;
+    transition: background, color .2s ease;
+    cursor: pointer;
+}
+#landing-works-btn:hover{
+    background: white;
+    color: #6b8e4e;
+}
+#landing-img{
+    width: 50%;
+}
