@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
 
 :root{
     --safe: 80%;
@@ -16,40 +16,57 @@ body{
 
 #nav{
     width: 100%;
-    padding: 10px;
+    height: 55px;
     display: flex;
+    justify-content: center;
     box-sizing: border-box;
+    background: #f5f5f5;
+}
+#nav-safe{
+    width: var(--safe);
+    display: flex;
 }
 #nav-logo{
-    width: 200px;
+    height: 100%;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #555;
 }
 #nav-links{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nav-link{
-    padding: 10px 20px;
+    height: 100%;
+    padding: 0 15px;
     box-sizing: border-box;
-    text-transform: uppercase;
     font-size: 14px;
-    color: rgba(0, 0, 0, .7);
+    color: #888;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
 }
-.nav-link a{
-
-}
-.nav-link a:hover{
-    color: #6b8e4e;
+.nav-link:hover{
+    color: rgba(0, 0, 0, .8);
 }
 
 #landing{
     width: 100%;
-    height: 500px;
-    padding: 50px 30px;
+    padding: 70px 0 50px 0;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    background: #6b8e4e;
+    background: #f5f5f5;
     -background: #3c5148;
-    color: white;
+    color: #555;
+    position: relative;
 }
 #landing-safe{
     width: var(--safe);
@@ -61,29 +78,33 @@ body{
 }
 #landing-msg-title{
     font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 900;
+    -text-transform: uppercase;
+    font-weight: 500;
     margin: 0;
     padding: 0;
 }
 #landing-msg-body{
-    margin: 20px 0 25px 0;
+    margin: 20px 0 30px 0;
     padding: 0;
+    line-height: 25px;
 }
 #landing-works-btn{
-    width: 50%;
-    padding: 14px 20px;
+    padding: 11px 15px;
     box-sizing: border-box;
-    background: #6b8e4e;
+    background: transparent;
     font-weight: 700;
+    font-size: 14px;
     text-transform: uppercase;
-    border: 3px solid white;
+    border: 2px solid #9ac770;
+    border-radius: 20px;
     transition: background, color .2s ease;
     cursor: pointer;
+    float: right;
+    color: #9ac770;
 }
 #landing-works-btn:hover{
-    background: white;
-    color: #6b8e4e;
+    background: #9ac770;
+    color: white;
 }
 #landing-img{
     width: 50%;
@@ -94,14 +115,65 @@ body{
     box-sizing: border-box;
     padding: 40px 0px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#services:before{
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 300%;
+    height: 100px;
+    background: #f5f5f5;
+}
+#services-title{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 0 40px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    color: rgba(0, 0, 0, .7);
+}
+#services-list{
+    width: 100%;
+    display: flex;
     justify-content: space-around;
-    -background: rgba(0, 0, 0, .1);
 }
 .service{
     width: 30%;
-    height: 500px;
-    background: rgba(0, 0, 0, .05);
-    border-top: 3px solid #6b8e4e;
+    box-sizing: border-box;
+    padding: 40px;
+    background: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, .7);
+    border: 1px solid #eee;
+    border-top: 3px solid #9ac770;
+}
+.service-icon{
+    width: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-icon img{
+    width: auto;
+    height: auto;
+}
+.service-title{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 20px 0;
+    color: #555;
+}
+.service-desc{
+    margin: 0;
+    color: #999;
 }
 
 a:active{
@@ -109,6 +181,10 @@ a:active{
     color: initial;
 }
 a:visited{
+    text-decoration: none;
+    color: initial;
+}
+a:hover{
     text-decoration: none;
     color: initial;
 }

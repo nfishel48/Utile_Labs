@@ -10,18 +10,22 @@
     </head>
     <body>
         <div id = "nav">
-            <div id="nav-logo"></div>
-            <div id="nav-links">
-                <div class="nav-link"><a href = "/works">Work</a></div>
-                <div class="nav-link"><a href = "/services">Services</a></div>
-                <div class="nav-link"><a href = "/about">About</a></div>
+            <div id = "nav-safe">
+                <div id="nav-logo">
+                    <img src = "{% static 'img/acorn.png' %}">
+                </div>
+                <div id="nav-links">
+                    <a class="nav-link" href = "/works">Work</a>
+                    <a class="nav-link" href = "/services">Services</a>
+                    <a class="nav-link" href = "/about">About</a>
+                </div>
             </div>
         </div>
         <div id = "landing">
             <div id = "landing-safe">
                 <div id = "landing-msg">
                     <h1 id = "landing-msg-title">Websites Grow on Our Trees</h1>
-                    <p id = "landing-msg-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales neque eu purus euismod, nec tincidunt sapien posuere. Donec nec nibh sagittis, rutrum magna nec, ornare mi. Donec gravida sem interdum tortor euismod mattis. Nunc sed sollicitudin ligula. Aliquam condimentum sollicitudin tellus ac mattis. Mauris nibh arcu, tempus vitae augue vitae, iaculis eleifend purus. Suspendisse sed turpis turpis. Nam sit amet erat elit. Sed viverra tincidunt interdum. Donec orci dolor, aliquet sit amet magna in, elementum elementum nunc. Pellentesque lacus ligula, tincidunt sit amet placerat a, egestas vitae elit. Curabitur lobortis risus massa, id lacinia sapien ultrices vel.</p>
+                    <p id = "landing-msg-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales neque eu purus euismod, nec tincidunt sapien posuere. Donec nec nibh sagittis, rutrum magna nec, ornare mi.</p>
                     <div id = "landing-works-btn">See Our Work</div>
                 </div>
                 <div id = "landing-img">
@@ -30,9 +34,29 @@
             </div>
         </div>
         <div id = "services">
-            <div class = "service"></div>
-            <div class = "service"></div>
-            <div class = "service"></div>
+            <div id = "services-list">
+                <div class = "service">
+                    <div class = "service-icon">
+                        <img src = "{% static 'img/one.png' %}">
+                    </div>
+                    <p class = "service-title">Simple, Clean Design</p>
+                    <p class = "service-desc">Aenean lorem eros, elementum vitae orci non, tempus imperdiet lectus. Praesent a volutpat risus. Proin eget augue at orci congue hendrerit.</p>
+                </div>
+                <div class = "service">
+                    <div class = "service-icon">
+                        <img src = "{% static 'img/two.png' %}">
+                    </div>
+                    <p class = "service-title">Diverse Skillset</p>
+                    <p class = "service-desc">Duis egestas ac metus in pretium. Vestibulum euismod metus in sem commodo rhoncus. Etiam blandit luctus urna semper porta. Aliquam ornare ultricies est sed eleifend.</p>
+                </div>
+                <div class = "service">
+                    <div class = "service-icon">
+                        <img src = "{% static 'img/three.png' %}">
+                    </div>
+                    <p class = "service-title">Immediate Support</p>
+                    <p class = "service-desc">Praesent ornare ex lectus, eget volutpat felis eleifend in. Duis at ante nunc. Aliquam vehicula malesuada erat quis mattis. Nullam id egestas est. Nullam ut sem massa.</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>
