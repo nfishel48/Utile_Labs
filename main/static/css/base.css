@@ -2,6 +2,7 @@
 
 :root{
     --safe: 80%;
+    --safe-max: 1100px;
 }
 body{
     margin: 0;
@@ -19,8 +20,7 @@ a:active{
     color: initial;
 }
 a:visited{
-    text-decoration: none;
-    color: initial;
+    text-decoration: none;    
 }
 a:hover{
     text-decoration: none;
