@@ -12,9 +12,7 @@ body{
     align-items: center;
 }
 *{
-    font-family: 'Source Sans Pro', sans-serif;
-
-
+    font-family: 'Roboto', sans-serif;
 }
 
 a:active{
@@ -34,5 +32,5 @@ a:focus{
 }
 a{
     text-decoration: none;
-    color: initial;
+    color: inherit;
 }
