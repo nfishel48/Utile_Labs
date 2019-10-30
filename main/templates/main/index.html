@@ -18,29 +18,62 @@
             </div>
         </div>
     </div>
-    <div id = "services">
-        <div id = "services-list">
-            <div class = "service">
-                <div class = "service-icon">
+    <div id = "products">
+        <div id = "products-list">
+            <div class = "product">
+                <div class = "product-icon">
                     <img src = "{% static 'img/one.png' %}">
                 </div>
-                <p class = "service-title">Simple, Clean Design</p>
-                <p class = "service-desc">Aenean lorem eros, elementum vitae orci non, tempus imperdiet lectus. Praesent a volutpat risus. Proin eget augue at orci congue hendrerit.</p>
+                <p class = "product-title">Website Development</p>
+                <p class = "product-desc">Aenean lorem eros, elementum vitae orci non, tempus imperdiet lectus. Praesent a volutpat risus. Proin eget augue at orci congue hendrerit.</p>
+                <a class = "more-btn product-btn" href = "services#website">See more</a>
             </div>
-            <div class = "service">
-                <div class = "service-icon">
+            <div class = "product">
+                <div class = "product-icon">
                     <img src = "{% static 'img/two.png' %}">
                 </div>
-                <p class = "service-title">Diverse Skillset</p>
-                <p class = "service-desc">Duis egestas ac metus in pretium. Vestibulum euismod metus in sem commodo rhoncus. Etiam blandit luctus urna semper porta. Aliquam ornare ultricies est sed eleifend.</p>
+                <p class = "product-title">Web Apps</p>
+                <p class = "product-desc">Duis egestas ac metus in pretium. Vestibulum euismod metus in sem commodo rhoncus. Etiam blandit luctus urna semper porta. Aliquam ornare ultricies est sed eleifend.</p>
+                <a class = "more-btn product-btn" href = "services#website">See more</a>
             </div>
-            <div class = "service">
-                <div class = "service-icon">
+            <div class = "product">
+                <div class = "product-icon">
                     <img src = "{% static 'img/three.png' %}">
                 </div>
-                <p class = "service-title">Immediate Support</p>
-                <p class = "service-desc">Praesent ornare ex lectus, eget volutpat felis eleifend in. Duis at ante nunc. Aliquam vehicula malesuada erat quis mattis. Nullam id egestas est. Nullam ut sem massa.</p>
+                <p class = "product-title">Support</p>
+                <p class = "product-desc">Praesent ornare ex lectus, eget volutpat felis eleifend in. Duis at ante nunc. Aliquam vehicula malesuada erat quis mattis. Nullam id egestas est. Nullam ut sem massa.</p>
+                <a class = "more-btn product-btn" href = "services#website">See more</a>
             </div>
+        </div>
+    </div>
+    <div id = "contact">
+        <div id = "contact-safe">
+            <p id = "contact-title">Get In Touch</p>
+            <p>Expect a quick response by email or by Messenger.</p>
+            <div id = "contact-options">
+                <div class = "contact-option">
+                    <img src = "{% static 'img/email.png' %}">
+                    <p>email@utilelabs.com</p>
+                </div>
+                <div class = "contact-option">
+                    <img src = "{% static 'img/messenger.png' %}">
+                    <p>UtileLabs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "about">
+        <div id = "about-safe">
+            <div id = "about-images">
+                <div class = "about-img"></div>
+                <div class = "about-img"></div>
+                <div class = "about-img"></div>
+            </div>
+            <p id = "about-title">The Team</p>
+            <p id = "about-desc">
+                {% lorem %}
+            </p>
+            <a class = "more-btn" href = "about">Learn more</a>
         </div>
     </div>
 {% endblock %}
