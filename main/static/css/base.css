@@ -12,7 +12,9 @@ body{
     align-items: center;
 }
 *{
-    font-family: 'Roboto';
+    font-family: 'Source Sans Pro', sans-serif;
+
+
 }
 
 a:active{
@@ -20,7 +22,7 @@ a:active{
     color: initial;
 }
 a:visited{
-    text-decoration: none;    
+    text-decoration: none;
 }
 a:hover{
     text-decoration: none;
