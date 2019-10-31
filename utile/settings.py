@@ -25,7 +25,10 @@ SECRET_KEY = 'xmgln)7$w@%^6ipz^z!ymhk&0ok+w@frq3liwap2m*@iw7(*7m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+        'support.localhost',
+        'localhost'
+    ]
 
 
 # Application definition
@@ -37,10 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main'
+    'django_hosts',
+    'main',
+    'support',
 ]
 
 MIDDLEWARE = [
+    'django_hosts.middleware.HostsRequestMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -48,9 +54,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_hosts.middleware.HostsResponseMiddleware',
 ]
 
 ROOT_URLCONF = 'utile.urls'
+ROOT_HOSTCONF = 'utile.hosts'
+
+DEFAULT_HOST = 'main'
 
 TEMPLATES = [
     {

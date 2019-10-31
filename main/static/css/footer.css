@@ -41,4 +41,6 @@
     width: 30px;
     height: 30px;
     background: white;
+    border-radius: 100%;
+    margin: 0 3px;
 }
