@@ -1,0 +1,32 @@
+{% extends 'support/base.html' %}
+{% load staticfiles %}
+
+{% block css %}
+
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'css/support/index.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+    {% include 'support/nav.html' %}
+
+    <div id = "panels">
+        <div id = "left-panel">
+            <a href = "overview"><div class = "option" id = "overview">
+                <img class = "option-icon" src = "{% static 'img/one.png' %}">
+                <p class = "option-name">Overview</p>
+            </div></a>
+            <a href = "tickets"><div class = "option" id = "tickets">
+                <img class = "option-icon" src = "{% static 'img/two.png' %}">
+                <p class = "option-name">Tickets</p>
+            </div></a>
+        </div>
+        <div id = "right-panel">
+            {% with template_name='support/panels/'|add:option %}
+                {% include ""|add:template_name %}
+            {% endwith %}
+        </div>
+    </div>
+
+{% endblock %}

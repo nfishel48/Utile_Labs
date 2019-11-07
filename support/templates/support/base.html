@@ -1,0 +1,17 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>{% block title %}Dashboard{% endblock title %}</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "{% static 'css/support/base.css' %}">
+        <link rel = "stylesheet" type = "text/css" href = "{% static 'css/support/nav.css' %}">
+
+        {% block css %}
+        {% endblock %}
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
