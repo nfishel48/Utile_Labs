@@ -5,3 +5,56 @@
     <link rel = "stylesheet" type = "text/css" href = "{% static 'css/support/panels/tickets.css' %}">
 
 {% endblock %}
+
+<!--
+    TODO:
+
+    -ticket options (delete, change priority, assign employee)
+    -individual ticket page
+    -select multiple tickets
+-->
+
+<div id = "tickets-container">
+    <table>
+        <colgroup>
+            <col style = "width: 40%">
+            <col style = "width: 10%">
+            <col style = "width: 10%">
+            <col style = "width: 10%">
+            <col style = "width: 15%">
+            <col style = "width: 15%">
+        </colgroup>
+        <tr>
+            <th>Subject</th>
+            <th>Status</th>
+            <th>Priority</th>
+            <th>Employee</th>
+            <th>Created</th>
+            <th>Updated</th>
+        </tr>
+        <tr>
+            <td>CSS on about page is broken</td>
+            <td><div class = "status open">Open</div></td> <!-- Open, In-Progress, Resolved -->
+            <td>Normal</td> <!-- Normal, Urgent -->
+            <td>Nick</td>
+            <td>2019-11-12 16:09:05</td>
+            <td>2019-11-12 17:22:41</td>
+        </tr>
+        <tr>
+            <td>{% lorem 7 w %}</td>
+            <td><p class = "status in-progress">In Progress</p></td> <!-- Open, In-Progress, Resolved -->
+            <td>Urgent</td> <!-- Normal, Urgent -->
+            <td>Nick</td>
+            <td>2019-11-12 16:09:05</td>
+            <td>2019-11-12 17:22:41</td>
+        </tr>
+        <tr>
+            <td>{% lorem 6 w %}</td>
+            <td><div class = "status resolved">Resolved</div></td> <!-- Open, In-Progress, Resolved -->
+            <td>Normal</td> <!-- Normal, Urgent -->
+            <td>Nick</td>
+            <td>2019-11-12 16:09:05</td>
+            <td>2019-11-12 17:22:41</td>
+        </tr>
+    </table>
+</div>

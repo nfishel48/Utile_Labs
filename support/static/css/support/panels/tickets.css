@@ -2,3 +2,63 @@
     border-left: 4px solid #82a95d;
     padding-left: 16px;
 }
+
+#tickets-container{
+    width: 100%;
+    height: auto;
+    background: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+    border: none;
+    outline: none;
+    border-spacing: 0;
+}
+th, td{
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+th:first-child, td:first-child{
+    padding-left: 15px;
+}
+th:last-child, td:last-child{
+    padding-right: 15px;
+}
+td:first-child, td:nth-child(2){
+    font-weight: 500;
+    color: #666;
+}
+tr{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+tr:first-child{
+    background: #f7f7f7;
+    color: #888;
+}
+tr:not(:first-child) td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.status{
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: white;
+    display: inline-block;
+}
+.open{
+    background: #179e17;
+}
+.resolved{
+    background: #ef3333;
+}
+.in-progress{
+    background: #ffb000;
+}
